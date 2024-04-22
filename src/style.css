@@ -1,0 +1,140 @@
+.container {
+    display: grid ;
+    grid-template-rows: 70px 1fr minmax(500px,6fr);
+    grid-template-columns: 1fr ;
+    grid-gap: 4px;
+
+  
+    background: linear-gradient(to right, #DFBC13 0%, #F4E650 50%, #fbfbc6 100%);
+
+} 
+
+
+.header {
+    grid-row: 1 / 2;    /* esta linea se asocia al grid del container*/
+
+    font-size: 3rem;
+    color:#3f2409;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.nav {
+    grid-row: 2 / 3;    /* esta linea se asocia al grid del container*/
+
+    display: grid ;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 30px;
+}
+
+.content {
+
+    grid-column: 2 / 3;    /* esta linea se asocia al grid del nav */
+
+    display: flex;
+    justify-content:space-around;
+
+}
+
+.btn {
+    color: rgb(223, 188, 19); font-size: 16px; line-height: 16px; padding: 6px; border-radius: 10px; 
+    font-family: Georgia, serif; font-weight: normal; text-decoration: none; font-style: normal; 
+    font-variant: normal; text-transform: none; box-shadow: rgb(223, 188, 19) 5px 5px 15px 5px; 
+    border: 2px solid #7f5514;}
+    .btn:hover {
+    color:#fbfbc6;
+    background: #DFBC13; }
+    .btn:active {
+    color:#fbfbc6;
+    background: #fbfbc6; }
+
+    .intro {
+        grid-row: 3/ 4;    /* esta linea se asocia al grid del container*/
+        display: grid; 
+        grid-template-columns: 1fr 3fr 1fr;
+    }
+
+    .introBox {
+        grid-column: 2 / 3;    /* esta linea se asocia al grid del intro */
+        background: linear-gradient(to right, #9a6b0e 0%, #efd420 50%, #9a6b0e 100%);
+        border: #ba8f0d;
+        color:#fbfbc6;
+        font-size: 2rem;
+        border-radius: 6px;
+        padding: 15%;
+    }
+
+    .contactTex{
+        
+        font-size: 3rem;
+        color:#3f2409;
+        text-transform: capitalize;
+        text-align: center;
+
+    }
+
+    .ocultar {
+        display: none;
+    }
+
+    
+  .mostrar{
+    display: grid;
+  }
+
+  .menuContent{
+    background: linear-gradient(to right, #9a6b0e 0%, #efd420 50%, #9a6b0e 100%);
+    border: #ba8f0d;
+    color:#fbfbc6;
+    font-size: 2rem;
+    border-radius: 6px;
+    padding: 1%;
+    
+    
+    grid-row: 3/ 4;    /* esta linea se asocia al grid del container*/
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));  
+    column-gap: 15px;
+    row-gap:10px;
+    }
+
+    .card {
+        background-color: #fbfbc6;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        column-gap: 20px;
+    
+      }
+    
+      .card p {
+        
+        color: #7f5514;
+        font-weight: normal;
+        font-size: 1.5rem;
+        padding-left: 40px;
+        padding-bottom: 10px;
+      }
+    
+      .card .showName {
+        font-size: 1.5rem;
+        text-align: center;
+      }
+      
+      .showName { 
+        grid-column: 1/3 ;     /* esta linea se asocia al grid del card*/
+      }
+    
+      .showIngred {
+        grid-row: 2/3 ;     /* esta linea se asocia al grid del card*/
+        grid-column: 1/3 ; 
+
+    }
+     
+      .showPrice {
+        grid-row: 3/4 ;     /* esta linea se asocia al grid del card*/
+        grid-column: 1/3 ;
+    }
+     
