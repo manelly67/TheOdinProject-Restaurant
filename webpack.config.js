@@ -5,7 +5,10 @@ module.exports = {
     mode: 'development',
       entry: {
         index: './src/index.js',
-        function1: './src/function1.js',
+        loadHome: './src/function1.js',
+        loadMenu: './src/function2.js',
+        loadContact: './src/function3.js',
+        clearContainers: './src/clearContainers.js',
       },
       devtool: 'inline-source-map',
       devServer: {
